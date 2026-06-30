@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+    }
+}
+dependencyResolution {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+rootProject.name = "SSRFTester"
+include ':app'

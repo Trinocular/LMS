@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SSRF 漏洞验证工具"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="目标: 华为音乐 StreamStarter"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入目标URL"
+        android:inputType="textUri"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAttack"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="触发SSRF请求"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:background="#F5F5F5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1A1A2E"
+        android:padding="8dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/logText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="日志输出...\n"
+            android:textSize="11sp"
+            android:textColor="#00FF00"
+            android:typeface="monospace" />
+    </ScrollView>
+
+</LinearLayout>
